@@ -2,7 +2,7 @@
 
 {
   "editor.codeActionsOnSave": {
-      "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "files.eol": "\n",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
