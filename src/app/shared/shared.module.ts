@@ -6,21 +6,21 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { DialogService } from 'primeng/dynamicdialog';
-import { ToobarNavigationsComponent } from './components/toobar-navigations/toobar-navigations.component';
+import { ToolbarNavigationComponent } from './components/toolbar-navigation/toolbar-navigation.component';
 
 @NgModule({
-  declarations: [ToobarNavigationsComponent],
+  declarations: [ToolbarNavigationComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    //primeNG
+    //PrimeNg
     ToolbarModule,
     CardModule,
     ButtonModule,
   ],
-  exports: [ToobarNavigationsComponent],
+  exports: [ToolbarNavigationComponent],
   providers: [DialogService, CurrencyPipe],
 })
 export class SharedModule {}
