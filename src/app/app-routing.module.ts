@@ -13,13 +13,23 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
   },
+  //rota de dashbord
   {
     path: 'dashboard',
     loadChildren: () =>
       import('./modules/dashboard/dashboard.module').then(
         (m) => m.DashboardModule
       ),
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
+  },
+  //rotas de produtos
+  {
+    path: 'products',
+    loadChildren: () =>
+      import('./modules/products/products.module').then(
+        (m) => m.ProductsModule
+      ),
+    canActivate: [AuthGuard],
   },
 ];
 
